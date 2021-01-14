@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../img/Background-vector.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: white !important;
+    outline: none;
+
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.btn-user {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 10px #000000;
+    padding: 50px 35px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 15px;
+}
+
+.btn-user a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #23B0A8;
+    padding-top: 2px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 7px;
+}
+
+.btn-logout {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFDA2F;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+.main-div {
+    width: 350px;
+    height: 500px;
+    background-color: #FFFFFF;
+    padding: 0 35px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #000000;
+    margin: auto;
+    margin-top: 60px;
+}
+
+img {
+    width: 80px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.txtb .txt input {
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #BFBFBF;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+}
+
+.txtb .txt .pass {
+    margin-bottom: 0;
+}
+
+.txtb .chek {
+    font-size: 12px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txtb .chek a {
+    margin-right: 25px;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.txt-btn {
+    text-align: center;
+    margin-top: 30px;
+    line-height: 0;
+}
+
+.txt-btn .tombol {
+    background-color: #62A0F2;
+    border: none;
+}
+
+.tombol {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+
+.txt-btn p {
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.txt-btn a {
+    font-size: 10px;
+    border-bottom: 1px solid;
+}
+
+.txt-btn .tombol:hover {
+    background-color: #23B0A8;
+}

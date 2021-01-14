@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pendataan Mahasiswa dan Nilai Mahasiswa</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Academia.NET</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content -->
+        <div class="container data-table">
+            <!-- data table view -->
+            <h1 class="title-data">Student Data</h1>
+            <div class="table-wrapper">
+                <table class="table table-bordered table-user">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">NIM</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Score</th>
+                            <th scope="col">action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-outline-success btn-add">Add Data</button>
+                </div>
+            </div>
+
+
+            <!-- add data table -->
+            <div class="add-data data-wrapper">
+                <div class="data">
+                    <div class="data-header">
+                        <h3>Add New Data</h3>
+                    </div>
+                    <div class="data-content">
+                        <form class="form" autocomplete="off">
+                            <input type="text" name="nim" placeholder="NIM">
+                            <input type="text" name="fullName" placeholder="Full Name">
+                            <input type="text" name="score" placeholder="Score">
+                            <button class="btn btn-outline-success btn-data">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit data table -->
+            <div class="edit-data data-wrapper">
+                <div class="data">
+                    <div class="data-header">
+                        <h3>Edit New Data</h3>
+                    </div>
+                    <div class="data-content">
+                        <form class="form" autocomplete="off">
+                            <input type="text" name="nim" placeholder="NIM">
+                            <input type="text" name="fullName" placeholder="Full Name">
+                            <input type="text" name="score" placeholder="Score">
+                            <button class="btn btn-outline-success btn-data">Edit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyAbgoNdq1HNIqm4VdzSQcSc5D5o62Nk8v0",
+                authDomain: "tubes-sbd-psbd.firebaseapp.com",
+                projectId: "tubes-sbd-psbd",
+                storageBucket: "tubes-sbd-psbd.appspot.com",
+                messagingSenderId: "648938926675",
+                appId: "1:648938926675:web:c9369e8139329affb2cca6",
+                measurementId: "G-GHKY91V2BK"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            const db = firebase.firestore();
+        </script>  
+
+        <!-- JavaScript -->
+        <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+        <script src="../../js/script.js"></script>
+    </body>
+</html>

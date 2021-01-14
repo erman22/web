@@ -1,0 +1,163 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: #23B0A8 !important;
+    outline: none;
+
+}
+
+.nav-link {
+    color: #23B0A8 !important;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.table th {
+    text-align: center;
+}
+
+
+.data-table {
+    width: 900px;
+    margin-top: 100px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+.title-data {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.action {
+    text-align: center;
+}
+
+button.btn {
+    width: 100px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* Add Data Table */
+.data-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #23b0a95d;
+    z-index: 1;
+    display: none;
+}
+
+.data {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 70px auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+    animation: popUpTop .4s;
+}
+
+@keyframes popUpTop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.data-show {
+    display: block;
+}
+
+.data-header {
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 28px;
+    padding-top: 30px;
+    background-color: #23B0A8;
+}
+
+.data-content {
+    padding: 32px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 16px;
+    text-indent: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #23B0A8;
+}
+
+button.btn-add,
+.btn-data,
+.btn-edit {
+    margin-top: 50px;
+    color: #23B0A8;
+    border: 1px solid #23B0A8;
+}
+
+button.btn-add:hover,
+.btn-data:hover,
+.btn-edit:hover {
+    border: 1px solid #23B0A8;
+    background-color: #23B0A8;
+}
+
+@media (max-width: 576px) {
+    .data-table {
+        width: 350px;
+        padding: 30px 5px;
+        border-radius: 10px;
+    }
+
+    .title-data {
+        font-size: 24px;
+    }
+
+    .table-user {
+        font-size: 14px;
+    }
+
+    button.btn-delete,
+    button.btn-edit {
+        font-size: 11px;
+        width: 70px;
+        margin: 2px 0;
+    }
+
+    .data-wrapper {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .data {
+        top: 50px;
+        width: 300px;
+        height: 400px;
+    }
+}

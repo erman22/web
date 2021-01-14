@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar_div">
+            <div class="container">
+                <a class="navbar-brand" href="#">Academia.NET</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
+                        <button onclick="logout()" class="btn-logout">Logout</button>
+                    </div>
+                </div>
+            </div>
+            <div id="user_div" class="btn-user">
+                <h3>Welcome User</h3>
+                <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+                <a href="pages/index.html" class="home">Go to home</a>
+            </div>
+        </nav>
+
+        <div class="main-div" id="login_div">
+            <img src="img/user.png" alt=".png">
+            <h1>Login</h1>
+            <div class="form">
+                <div class="txtb">
+                    <div class="txt">
+                        <input type="email" placeholder="Email" id="email_field">
+                    </div>
+                    <div class="txt">
+                        <input class="pass" type="password" placeholder="Password" id="password_field">
+                    </div>
+                    <div class="chek">
+                        <div class="chekbox">
+                            <input type="checkbox" name="chek" id="chek">
+                            <label id="chek" for="chek">Remember me</label>
+                        </div>
+                        <a href="#">Forget Password?</a>
+                    </div>
+                </div>
+                <div class="txt-btn">
+                    <button type="submit" class="btn btn-primary tombol" onclick=login()>Login</button>
+                    <p>Please register if you don't have an account !.</p>
+                    <a href="register/index.html">Daftar</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+                    apiKey: "AIzaSyAbgoNdq1HNIqm4VdzSQcSc5D5o62Nk8v0",
+                    authDomain: "tubes-sbd-psbd.firebaseapp.com",
+                    projectId: "tubes-sbd-psbd",
+                    storageBucket: "tubes-sbd-psbd.appspot.com",
+                    messagingSenderId: "648938926675",
+                    appId: "1:648938926675:web:c9369e8139329affb2cca6",
+                    measurementId: "G-GHKY91V2BK"
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

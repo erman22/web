@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp</title>
+</head>
+    <body>
+        <div class="container">
+            <img src="../img/user.png" alt=".png">
+            <h1>Registrasi</h1>
+            <form action="" class="form"></form>
+                <div class="txtb">
+                    <div class="txt">
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+                    <div class="txt">
+                        <input class="pass" type="password" placeholder="Password" id="password">
+                    </div>
+                </div>
+                <div class="txt-btn">
+                        <button onclick="register()" class="btn btn-primary tombol">Register</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+                    apiKey: "AIzaSyAbgoNdq1HNIqm4VdzSQcSc5D5o62Nk8v0",
+                    authDomain: "tubes-sbd-psbd.firebaseapp.com",
+                    projectId: "tubes-sbd-psbd",
+                    storageBucket: "tubes-sbd-psbd.appspot.com",
+                    messagingSenderId: "648938926675",
+                    appId: "1:648938926675:web:c9369e8139329affb2cca6",
+                    measurementId: "G-GHKY91V2BK"
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        </script>
+
+        <script src="../js/index.js"></script>
+    </body>
+</html>

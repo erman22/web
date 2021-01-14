@@ -1,0 +1,151 @@
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: #23B0A8 !important;
+    outline: none;
+
+}
+
+.nav-link {
+    color: #23B0A8 !important;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.btn-logout {
+    width: 80px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FFDA2F;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 8px;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+.display-4 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #23B0A8;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 12px;
+    bottom: 230px;
+}
+
+.link-data {
+    bottom: 150px;
+}
+
+.jumbotron a {
+    background-color: #23B0A8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    outline: none;
+}
+
+.image-box img {
+    width: 600px;
+    position: absolute;
+    right: 30px;
+    top: 180px;
+    animation: popRigth 1.5s;
+}
+
+.display-4,
+.lead,
+.link-data {
+    position: absolute;
+    animation: popLeft 1.5s;
+}
+
+@keyframes popLeft {
+    from {
+        left: -300px;
+        opacity: 0;
+    }
+
+    to {
+        left: 127px;
+        opacity: 100%;
+    }
+}
+
+@keyframes popRigth {
+    from {
+        right: -300px;
+        opacity: 0;
+    }
+
+    to {
+        right: 30px;
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #23B0A8;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .lead {
+        font-size: 12px;
+        bottom: 230px;
+    }
+
+    .link-data {
+        bottom: 180px;
+    }
+
+    .image-box img {
+        width: 200px;
+        right: 0;
+        margin-top: 225px;
+    }
+
+    @keyframes popLeft {
+        from {
+            left: -100px;
+            opacity: 0;
+        }
+
+        to {
+            left: 15px;
+            opacity: 100%;
+        }
+    }
+
+    @keyframes popRigth {
+        from {
+            right: -100px;
+            opacity: 0;
+        }
+
+        to {
+            right: 0px;
+            opacity: 100%;
+        }
+    }
+}
